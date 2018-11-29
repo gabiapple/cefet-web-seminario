@@ -14,6 +14,7 @@ html
 
 js
 ```js
+
 document.getElementById('input-file').addEventListener('change', loadFile);
 
 
