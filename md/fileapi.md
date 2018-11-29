@@ -2,7 +2,6 @@
 
 html
 ```html
-
 <div class="container">
   <textarea id="file-content"></textarea>
     <label for="file">Selecione um arquivo</label>
