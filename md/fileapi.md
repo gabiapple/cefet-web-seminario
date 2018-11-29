@@ -9,11 +9,13 @@ html
     <input type="file" id="input-file" name="input-file" accept="text/">
   </div>
 </div>
+
 ```
 
 js
 ```js
 document.getElementById('input-file').addEventListener('change', loadFile);
+
 
 function loadFile(event) {
     const input = event.target
@@ -26,4 +28,5 @@ function placeFileContent(target, file) {
     reader.onload = event => target.value = event.target.result;
     reader.readAsText(file);
 }
+
 ```
