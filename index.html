@@ -39,6 +39,9 @@
                         <p>Possibilita a entrada por fala em um navegador</p>
                     </ul>
                 </section>
+                 <section>
+                    <h2>File API</h2>
+                </section>
                 <section data-markdown="md/fileapi.md"
                     data-separator="^\n\n\n"
                     data-separator-vertical="^\n\n"
@@ -46,20 +49,40 @@
                     data-charset="iso-8859-15">
                 </section>
                 <section>
-                    <h2>File API - Exemplo</h2>
+                    <h2>Exemplo</h2>
                     <div class="container">
                         <textarea id="file-content"></textarea>
                         <label for="file">Selecione um arquivo</label>
                         <input type="file" id="input-file" name="input-file" accept="text/">
+                        <script src="js/main.js"></script>
                     </div>
-                    <script src="js/main.js"></script>
+                </section>
+                <section>
+                    <h2>Can I use?</h2>
+                    <iframe data-src="https://caniuse.com/#feat=fileapi"></iframe>
                 </section>
                 <section>
                     <h2>Speech Recognition API</h2>
                 </section>
-                <section>
+                <section data-markdown="md/speechapi.md"
+                    data-separator="^\n\n\n"
+                    data-separator-vertical="^\n\n"
+                    data-separator-notes="^Note:"
+                    data-charset="iso-8859-15">
+                </section>
+                 <section>
+                    <h2>Exemplo</h2>
+                    <h3>Speech color changer</h3>
+
+                    <p class="hints"></p>
+                    <div>
+                        <p class="output"><em>...diagnostic messages</em></p>
+                    </div>
+                    <script src="js/speechcolor.js"></script>
+                </section>
+                 <section>
                     <h2>Can I use?</h2>
-                    <iframe data-src="https://caniuse.com/#search=file%20api"></iframe>
+                    <iframe data-src="https://caniuse.com/#feat=speech-recognition"></iframe>
                 </section>
             </div>
         </div>
