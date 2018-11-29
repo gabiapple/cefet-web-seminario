@@ -10,11 +10,12 @@ html
 </div>
 ```
 
+
+
 js
+
 ```js
 document.getElementById('input-file').addEventListener('change', loadFile);
-
-
 function loadFile(event) {
     const input = event.target
   if ('files' in input && input.files.length > 0) {
@@ -26,5 +27,4 @@ function placeFileContent(target, file) {
     reader.onload = event => target.value = event.target.result;
     reader.readAsText(file);
 }
-
 ```
